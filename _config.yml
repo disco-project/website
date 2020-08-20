@@ -7,7 +7,7 @@ description: >
   For better interoperability between distributed ledgers.
 lang: en-US
 
-baseurl: "/disco" # the subpath of your site, e.g. /blog/
+baseurl: "/website" # the subpath of your site, e.g. /blog/
 url: https://aksakalli.github.io/jekyll-doc-theme # the base hostname & protocol for your site
 git_address: https://git.snet.tu-berlin.de/blockchain/disco/website
 git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
