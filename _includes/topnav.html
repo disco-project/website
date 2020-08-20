@@ -1,0 +1,32 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container navbar-container" style="width: 100%;">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" style="font-family: boysand;" href="{{ site.baseurl }}/">
+                <span><img src="{{ "/assets/img/discoball.png" | relative_url }}" alt="Logo"></span> 
+                <h1 id="titleDescription" style="font-size 100%; margin-left: 50px; margin-top: -105px;">{{ site.titleWithDescription }}</h1>
+            </a>
+        </div>
+    </div>
+    <div class="container navbar-container" style="width: 100%">
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li {% if page.sectionid=='root' %} class="active" {% endif %} class="navbar-item"><a href="{{ site.baseurl }}/">About</a></li>
+                <li {% if page.sectionid=='timeline' %} class="active" {% endif %} class="navbar-item"><a href="{{ "/_pages/timeline.html" | relative_url }}">Timeline</a></li>
+                <li {% if page.sectionid=='team' %} class="active" {% endif %} class="navbar-item"><a href="{{ "/_pages/team.html" | relative_url }}">Team</a></li>
+                <li {% if page.sectionid=='imprint' %} class="active" {% endif %} class="navbar-item"><a href="{{ "/_pages/imprint.html" | relative_url }}">Imprint</a></li>
+                <li {% if page.sectionid=='blog' %} class="active" {% endif %} class="navbar-item"><a href="{{ site.posts.first.url | relative_url }}">Blog</a></li>
+            </ul>
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ site.git_address }}"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

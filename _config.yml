@@ -1,0 +1,91 @@
+# Site settings
+title: DISCO
+titleWithDescription: DISCO - Distributed Ledger Communication for Smart Contracts
+titleDescription: "- Distributed Ledger Communication for Smart Contracts"
+email: your-email@domain.com
+description: >
+  For better interoperability between distributed ledgers.
+lang: en-US
+
+baseurl: "/disco" # the subpath of your site, e.g. /blog/
+url: https://aksakalli.github.io/jekyll-doc-theme # the base hostname & protocol for your site
+git_address: https://git.snet.tu-berlin.de/blockchain/disco/website
+git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
+
+img_dir: img/
+
+# theme options from https://bootswatch.com/3/
+# comment out this to use default Bootstrap
+bootwatch: sandstone # cerulean cosmo custom cyborg darkly flatly journal lumen readable sandstone simplex slate solar spacelab superhero united yeti
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+# Plugins (previously gems:)
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .idea/
+  - .gitignore
+  - README.md
+include: ["_pages"]
+timezone: Europe/Berlin
+defaults:
+- scope:
+    path: _posts
+    type: posts
+  values:
+    layout: post
+    sectionid: blog
+
+- scope:
+    path: _docs
+    type: docs
+  values:
+    layout: docs
+    sectionid: docs
+    seo:
+      type: "WebPage"
+
+# collections
+collections_dir: collections
+collections:
+  team:
+    output: true
+  milestones:
+    output: true
+  about:
+    output: true
+  docs:
+    permalink: /:collection/:path/
+    output: true
+  posts:
+    permalink: /blog/:year/:month/:day/:title/
+    output: true
+
+# posts
+excerpt_separator: <!--more-->
+
+# supporters
+supporters:
+  - name: huawei
+    img: assets/img/supporters/huawei.png
+    website: https://www.huawei.com/de/
+  
+  - name: softwarecampus
+    img: assets/img/supporters/softwareCampus.png
+    website: https://softwarecampus.de/
+  
+  - name: telecom
+    img: assets/img/supporters/telekom.png
+    website: https://laboratories.telekom.com/
+  
+  - name: tuberlin
+    img: assets/img/supporters/tuberlin.png
+    website: https://www.tu.berlin/

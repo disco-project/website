@@ -1,0 +1,342 @@
+@font-face {
+  font-family: "testing";
+  src: url("./fonts/CocoBiker\ Regular\ Trial.ttf");
+}
+
+@font-face {
+  font-family: "monohipster";
+  src: url("./fonts/monohipster.ttf");
+}
+
+
+@font-face {
+  font-family: "boysand";
+  src: url("./fonts/BOYSAND.otf");
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    padding-top: $navbar-height + $navbar-margin-bottom;
+    margin-bottom: 46px;
+  }
+  
+  .navbar-brand{
+    img{
+      margin: -$navbar-padding-vertical 0;
+      height: $navbar-height;
+      padding: 10px 0;
+    }
+    color: #fed136;
+  }
+  
+  
+  .header-container-main {
+    background-color: black;
+    background: url('../img/discoball.jpg') no-repeat 50% 0;
+    color: #fff;
+    min-height: 20em;
+    h1 {
+      color: #fff;
+    }
+    // background-attachment: fixed;
+    background-size: cover;
+    background-position: center 36%;
+    margin-top: -37px;
+  }
+  .navbar-default {
+    border-color: transparent;
+    font-family: "Kaushan Script", "Helvetica Neue",Helvetica,Arial,cursive;
+    color: white;
+  }
+
+  .navbar-container {
+    font-size: 16px;
+  }
+  .page-content {
+    padding-bottom: 20px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;    
+    padding-top: 10px;
+    background-color: $gray-lighter;
+    color: $gray-dark;
+  }
+  
+  .post-list-container {
+    li a.active {
+      font-weight: bold;
+    }
+  }
+  *[id]:before {
+    display: block;
+    content: " ";
+    margin-top: -75px;
+    height: 75px;
+    visibility: hidden;
+  }
+  .navbar-form .has-feedback .form-control-feedback{
+    top:10px
+  }
+  
+  .timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
+    background-color: #f1f1f1;
+}
+
+.timeline>li {
+    position: relative;
+    margin-bottom: 50px;
+    min-height: 50px;
+}
+
+.timeline>li:before,
+.timeline>li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline>li:after {
+    clear: both;
+}
+
+.timeline>li .timeline-panel {
+    float: right;
+    position: relative;
+    width: 100%;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.timeline>li .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-image {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    border: 7px solid #f1f1f1;
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #fed136;
+}
+
+.timeline>li .timeline-image h4 {
+    margin-top: 12px;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline .timeline-heading h4 {
+    margin-top: 0;
+    color: inherit;
+}
+
+.timeline .timeline-heading h4.subheading {
+    text-transform: none;
+}
+
+.timeline .timeline-body>p,
+.timeline .timeline-body>ul {
+    margin-bottom: 0;
+}
+
+.team-member {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.team-member img {
+  margin: 0 auto;
+  border: 7px solid #fff;
+  max-width: auto;
+  max-height: 300px;
+}
+
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+.team-member p {
+  margin-top: 0;
+}
+
+.team-member-textbox {
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media(min-width:768px) {
+  .navbar-brand h1 {
+    font-size: 140%;
+    margin-top: -40px;
+  }
+
+    .team-member-textbox {
+      margin-top: 50px;
+      margin-left: -60px;
+      text-align: left;
+    }
+
+    .timeline:before {
+        left: 50%;
+    }
+
+    .timeline>li {
+        margin-bottom: 100px;
+        min-height: 100px;
+    }
+
+    .timeline>li .timeline-panel {
+        float: left;
+        width: 41%;
+        padding: 0 20px 20px 30px;
+        text-align: right;
+    }
+
+    .timeline>li .timeline-image {
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        margin-left: -20px;
+    }
+
+    .timeline>li .timeline-image h4 {
+        margin-top: 4px;
+        font-size: 9px;
+        line-height: 18px;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        float: right;
+        padding: 0 30px 20px 20px;
+        text-align: left;
+    }
+}
+
+@media(min-width:992px) {
+  .navbar-brand h1{
+    font-size: 190%;
+    margin-top: -50px;
+  }
+    .team-member-textbox {
+      margin-top: 50px;
+      margin-left: -80px;
+      text-align: left;
+    }
+
+    .timeline>li {
+        min-height: 150px;
+    }
+
+    .timeline>li .timeline-panel {
+        padding: 0 20px 20px;
+    }
+
+    .timeline>li .timeline-image {
+        width: 80px;
+        height: 80px;
+        margin-left: -40px;
+    }
+
+    .timeline>li .timeline-image h4 {
+        margin-top: 18px;
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        padding: 0 20px 20px;
+    }
+}
+
+@media(min-width:1200px) {
+  .navbar-brand h1{
+    font-size: 200%;
+    margin-top: -50px;
+  }
+    .team-member-textbox {
+      margin-top: 50px;
+      margin-left: -80px;
+      text-align: left;
+    }
+
+    .timeline>li {
+        min-height: 170px;
+    }
+
+    .timeline>li .timeline-panel {
+        padding: 0 20px 20px 100px;
+    }
+
+    .timeline>li .timeline-image {
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+    }
+
+    .timeline>li .timeline-image h4 {
+        margin-top: 30px;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        padding: 0 100px 20px 20px;
+    }
+}
