@@ -59,6 +59,7 @@ collections:
   team:
     output: true
   milestones:
+    permalink: /milestones/:year/:month/:day/:title/
     output: true
   about:
     output: true
@@ -71,6 +72,7 @@ collections:
 
 # posts
 excerpt_separator: <!--more-->
+future: true
 
 # supporters
 supporters:

@@ -6,8 +6,8 @@ sectionid: timeline
 <!-- About Section -->
 <div class="container">
     <div class="row">
-        <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Timeline</h2>
+        <div class="col-lg-12 text-center" style="margin-bottom:20px">
+            <h1 class="section-heading">Timeline</h1>
         </div>
     </div>
     <div class="row">
@@ -20,11 +20,14 @@ sectionid: timeline
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>{{ milestone.date | date: "%B %d,%Y"}}</h4>
-                                <h4 class="subheading">{{ milestone.title }} </h4>
+                                <h4><i>{{ milestone.date | date: "%B %d,%Y"}}</i></h4>
+                                <h4 class="subheading"><b>{{ milestone.title }}</b></h4>
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted">{{ milestone.excerpt }}</p>
+                            </div>
+                            <div class="timeline-body">
+                                <a href="{{ milestone.url | relative_url }}">Read more</a>
                             </div>
                         </div>
                     </li>

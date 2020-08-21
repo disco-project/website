@@ -1,5 +1,7 @@
 ---
 title: Konzeptionierung
+layout: milestones
+sectionid: milestones
 ---
 Basierend auf dem in Arbeitspaket 2 erarbeiteten Anforderungskatalog wird ein Architekturkonzept für den
 DISCO-Prototypen entwickelt.

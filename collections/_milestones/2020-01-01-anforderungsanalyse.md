@@ -1,5 +1,7 @@
 ---
 title: Andorderungsanalyse und Anwendungsszenarien
+layout: milestones
+sectionid: milestones
 ---
 Im Rahmen des Arbeitspakets soll die Grundlage für das DISCO-Projekt erarbeitet werden. So werden
 zuerst aktuelle Protokolle und Plattformen zur Interoperabilität von Blockchains analysiert und evaluiert.

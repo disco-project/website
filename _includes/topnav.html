@@ -19,8 +19,10 @@
                 <li {% if page.sectionid=='root' %} class="active" {% endif %} class="navbar-item"><a href="{{ site.baseurl }}/">About</a></li>
                 <li {% if page.sectionid=='timeline' %} class="active" {% endif %} class="navbar-item"><a href="{{ "/_pages/timeline.html" | relative_url }}">Timeline</a></li>
                 <li {% if page.sectionid=='team' %} class="active" {% endif %} class="navbar-item"><a href="{{ "/_pages/team.html" | relative_url }}">Team</a></li>
+                <li {% if page.sectionid=='software' %} class="active" {% endif %} class="navbar-item"><a href="{{ "/_pages/software.html" | relative_url }}">Software</a></li>
+                <li {% if page.sectionid=='publications' %} class="active" {% endif %} class="navbar-item"><a href="{{ "/_pages/publications.html" | relative_url }}">Publications</a></li>
                 <li {% if page.sectionid=='imprint' %} class="active" {% endif %} class="navbar-item"><a href="{{ "/_pages/imprint.html" | relative_url }}">Imprint</a></li>
-                <li {% if page.sectionid=='blog' %} class="active" {% endif %} class="navbar-item"><a href="{{ site.posts.first.url | relative_url }}">Blog</a></li>
+                <li {% if page.sectionid=='milestones' %} class="active" {% endif %} class="navbar-item"><a href="{{ site.milestones.last.url | relative_url }}">Milestone Descriptions</a></li>
             </ul>
             <div class="navbar-right">
                 <ul class="nav navbar-nav">

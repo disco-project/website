@@ -58,6 +58,22 @@ html {
   .page-content {
     padding-bottom: 20px;
   }
+
+  .supporter-container {
+    border: 1px;
+    position: relative;
+    bottom: -7px;
+    width: 100%;
+    background-color: $gray-lighter;
+    color: $gray-dark;
+  }
+
+  .supporter-img {
+    height: auto; 
+    top: 20%;
+    vertical-align: middle;
+  }
+
   .footer {
     position: absolute;
     bottom: 0;
@@ -224,6 +240,7 @@ html {
 }
 
 @media(min-width:768px) {
+
   .navbar-brand h1 {
     font-size: 140%;
     margin-top: -40px;
@@ -272,6 +289,11 @@ html {
 }
 
 @media(min-width:992px) {
+  .supporter-img {
+    max-width: 50%; 
+    height: auto; 
+    top: 50%;
+  }
   .navbar-brand h1{
     font-size: 190%;
     margin-top: -50px;
