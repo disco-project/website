@@ -1,5 +1,6 @@
 ---
-title: 1. Projektmanagement
+title: Projektmanagement
+number: 1
 layout: milestones
 sectionid: milestones
 enddate: 01.12.2021

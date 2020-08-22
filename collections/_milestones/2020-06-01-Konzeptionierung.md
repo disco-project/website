@@ -1,5 +1,6 @@
 ---
-title: 3. Konzeptionierung
+title: Konzeptionierung
+number: 3
 layout: milestones
 sectionid: milestones
 enddate: 01.09.2021
