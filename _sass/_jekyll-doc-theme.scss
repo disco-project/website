@@ -61,15 +61,18 @@ html {
 
   .supporter-container {
     border: 1px;
-    position: relative;
-    bottom: -12px;
+    bottom: 40px;
     width: 100%;
-    background-color: $gray-lighter;
-    color: $gray-dark;
   }
 
   .supporter-img {
-    height: auto; 
+    height: auto;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     top: 20%;
     vertical-align: middle;
   }
@@ -77,8 +80,7 @@ html {
   .footer {
     position: absolute;
     bottom: 0;
-    width: 100%;    
-    padding-top: 10px;
+    width: 100%;
     background-color: $gray-lighter;
     color: $gray-dark;
   }
@@ -239,6 +241,11 @@ html {
   text-align: center;
 }
 
+@media(max-width:767px) {
+  .supporter-img {
+    width: 50%;
+  }
+}
 @media(min-width:768px) {
 
   .navbar-brand h1 {
@@ -289,11 +296,6 @@ html {
 }
 
 @media(min-width:992px) {
-  .supporter-img {
-    max-width: 50%; 
-    height: auto; 
-    top: 50%;
-  }
   .navbar-brand h1{
     font-size: 190%;
     margin-top: -50px;

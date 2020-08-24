@@ -1,17 +1,19 @@
-<div class="container supporter-container" style="width:100%; height: 20%;">
+
+<hr>
+<div class="container supporter-container" style="width:100%;">
     <div class="row container-small">
         {% for supporter in site.supporters %}
-            <div class="col-sm-3 text-center supporter-img-container">
-                <a style="text-align: center" href="{{ supporter.website }}/">
-                    <span><img class="img-responsive supporter-img" src={{ supporter.img | relative_url }} alt="Logo"></span> 
+            <div class="col-xs-3 col-sm-3 col-md-3 supporter-img-container">
+                <a href="{{ supporter.website }}/">
+                    <img class="img-responsive supporter-img" src={{ supporter.img | relative_url }} alt="Logo">
                 </a>
             </div>
         {% endfor %}
     </div>
 </div>
+<hr>
 <footer class="footer">
     <div class="container">
-
         <p class="text-center">
             {{ site.title }} {{ site.time | date: '%Y' }} |
             Powered by <a href="https://github.com/aksakalli/jekyll-doc-theme">Jekyll Doc Theme</a>
