@@ -10,7 +10,7 @@ layout: default
                 <h4>MILESTONES</h4>
                 <ul class="list-unstyled post-list-container">
                     {% for post in site.milestones limit:10 %}
-                    <li><a href="{{ post.url | relative_url }}" {% if page.title==post.title %} class="active" {% endif %}>{{ post.date | date: "%B %Y" }}: {{ post.title }}</a></li>
+                    <li><a href="{{ post.url | relative_url }}" {% if page.title==post.title %} class="active" {% endif %}>{{ post.enddate | date: "%B %Y" }}: {{ post.title }}</a></li>
                     {% endfor %}
                     <li><a href="{{ "/allmilestones" | relative_url }}">All milestones ...</a></li>
                 </ul>
