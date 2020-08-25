@@ -2,13 +2,25 @@
 <hr>
 <div class="container supporter-container" style="width:100%;">
     <div class="row container-small">
-        {% for supporter in site.supporters %}
-            <div class="col-xs-3 col-sm-3 col-md-3 supporter-img-container">
-                <a href="{{ supporter.website }}/">
-                    <img class="img-responsive supporter-img" src={{ supporter.img | relative_url }} alt="Logo">
-                </a>
-            </div>
-        {% endfor %}
+        <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3"></div>
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            {% for supporter in site.supporters %}
+                {% if supporter.name == "tuberlin" %}
+                    <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 supporter-img-container tu-berlin">
+                        <a href="{{ supporter.website }}/">
+                            <img class="img-responsive supporter-img" src={{ supporter.img | relative_url }} alt="Logo">
+                        </a>
+                    </div>
+                {% else %}
+                    <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 supporter-img-container">
+                        <a href="{{ supporter.website }}/">
+                            <img class="img-responsive supporter-img" src={{ supporter.img | relative_url }} alt="Logo">
+                        </a>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
     </div>
 </div>
 <hr>

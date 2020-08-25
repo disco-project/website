@@ -83,11 +83,13 @@ supporters:
   - name: softwarecampus
     img: assets/img/supporters/softwareCampus.png
     website: https://softwarecampus.de/
-  
+    
+  - name: tuberlin
+    img: assets/img/supporters/Logo_der_Technischen_Universität_Berlin.svg.png
+    website: https://www.tu.berlin/
+
   - name: telecom
     img: assets/img/supporters/telekom.png
     website: https://laboratories.telekom.com/
   
-  - name: tuberlin
-    img: assets/img/supporters/tuberlin.png
-    website: https://www.tu.berlin/
+  

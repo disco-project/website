@@ -65,16 +65,22 @@ html {
     width: 100%;
   }
 
+  .supporter-img-container {
+    height: 100%;
+  }
+
   .supporter-img {
-    height: auto;
-    width: 30%;
+    height: 100%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    top: 20%;
-    vertical-align: middle;
+  }
+
+  .tu-berlin {
+    margin-top: 10px;
   }
 
   .footer {
@@ -243,10 +249,13 @@ html {
 
 @media(max-width:767px) {
   .supporter-img {
-    width: 50%;
+    width: 55%;
   }
 }
 @media(min-width:768px) {
+  .tu-berlin {
+    margin-top: 10px;
+  }
 
   .navbar-brand h1 {
     font-size: 140%;
@@ -296,6 +305,10 @@ html {
 }
 
 @media(min-width:992px) {
+  .tu-berlin {
+    margin-top: 0.8em;
+  }
+
   .navbar-brand h1{
     font-size: 190%;
     margin-top: -50px;
@@ -332,6 +345,9 @@ html {
 }
 
 @media(min-width:1200px) {
+  .tu-berlin {
+    margin-top: 1.2em;
+  }
   .navbar-brand h1{
     font-size: 200%;
     margin-top: -50px;
