@@ -68,7 +68,7 @@ collections:
     output: true
   posts:
     permalink: /blog/:year/:month/:day/:title/
-    output: true
+    output: false
 
 # posts
 excerpt_separator: <!--more-->
