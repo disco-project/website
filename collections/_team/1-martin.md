@@ -4,7 +4,7 @@ position: Project Leader
 pic: assets/img/team/westerkamp.jpg
 social:
 -   title: linkedin
-    url: sdfsdf
+    url: https://www.linkedin.com/in/martin-westerkamp-851398157
 ---
 Martin received his Master’s degree in Information Systems at the University of Münster in January 2017. His focus was on Information Systems Development, Business Intelligence and Model-Driven Software Development. 
 

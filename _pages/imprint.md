@@ -16,7 +16,7 @@ Ernst-Reuter-Platz 7
 
 10587 Berlin
 
-Mail: proceed@snet.tu-berlin.de
+Mail: westerkamp - at - tu-berlin.de
 
 Phone: +49 30 8353 58143
 

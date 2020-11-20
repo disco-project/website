@@ -4,7 +4,7 @@ pic: assets/img/team/stutzer.jpg
 position: Research Assistant
 social:
 -   title: linkedin
-    url: sdfjlkj
+    url: https://www.linkedin.com/in/leonard-stutzer/
 ---
 
 Leonard Stutzer received his Bachelor's degree in Computer Science at the Technical University of Berlin in September 2019. His focus was on distributed systems in the field of edge computing and swarm intelligence.
